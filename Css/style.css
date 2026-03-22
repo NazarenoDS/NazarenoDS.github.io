@@ -54,6 +54,22 @@
   margin: 1rem;
 }
 
+.btn-download {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-download:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  opacity: 0.95;
+}
+
 .ppicture {
     height: 250px; width: 250px;
     filter: drop-shadow(-10px 10px 32px rgba(0, 0, 0, 0.45));
@@ -64,6 +80,27 @@
     right: -20px;
     top: 60px;
     border-radius: 0px
+}
+
+.pp-circle {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pp-half-circle-wrapper {
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pp-half-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .img2{
@@ -180,13 +217,18 @@
   margin: 0.5rem;
 }
 
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
 .navSignalH{
   display: flex;
   flex-direction: row;
   justify-items: center;
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
 }
 
 .rombo{
@@ -424,6 +466,16 @@
     height: 350px;
   }
 
+  .pp-half-circle-wrapper {
+    width: 175px;
+    height: 350px;
+  }
+
+  .pp-half-circle {
+    width: 350px;
+    height: 350px;
+  }
+
   .mediumTextIndex{
     position: absolute;
     top: 46rem;
@@ -550,6 +602,16 @@
   }
   
   .ppcontactopic{
+    height: 350px;
+  }
+
+  .pp-half-circle-wrapper {
+    width: 175px;
+    height: 350px;
+  }
+
+  .pp-half-circle {
+    width: 350px;
     height: 350px;
   }
 
