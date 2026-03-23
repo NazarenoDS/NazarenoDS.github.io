@@ -200,39 +200,18 @@
   border-radius: 0px
 }
 
-.ppcontacto{
-  position: absolute;
-  left: 1rem;
-  top: 28rem;
+.contacto-card-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  filter: drop-shadow(-10px 10px 32px rgba(0, 0, 0, 0.45));
 }
+
+
 
 .ppcontactopic{
   height: 200px;
   filter: drop-shadow(-10px 10px 32px rgba(0, 0, 0, 0.45));
-}
-
-.mediumTextIndex{
-  position: absolute;
-  top: 36rem;
-  margin: 1.5rem;
-  font-size: 2.3rem;
-  line-height: 22px;
-}
-
-.mediumText{
-  position: absolute;
-  top: 36rem;
-  margin: 1.5rem;
-  font-size: 2.3rem;
-  line-height: 22px;
-}
-
-.mediumTextContact{
-  position: absolute;
-  top: 30rem;
-  right: 1.4rem;
-  font-size: 2.3rem;
-  line-height: 22px;
 }
 
 .workInfo{
@@ -243,16 +222,17 @@
   line-height: 22px;
 }
 
+.secundaryText{
+  display: flex;
+
+  justify-content: start;
+  align-content: start;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
 /*Conguracion para pantalla horizontal pc*/
 @media (max-height: 400px) {
-  .mediumTextIndex{
-    top: 1rem;
-    margin: 1rem;
-  }
-  .mediumText{
-    top: 1rem;
-    margin: 1rem;
-  }
   .pp1{
     top: 1px;
     right: 70px;
@@ -310,7 +290,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .navSignalH{
@@ -548,7 +528,7 @@
   }
 
   .hero-text {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     line-height: 1.4;
     text-align: left;
     max-width: 420px;
@@ -583,11 +563,33 @@
     top: 60px;
   }
   
+  .contacto-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    max-width: 700px;
+  }
+
+  .contacto-card-img img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .contacto-card-text {
+    font-size: 2.2rem;
+    text-align: left;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .ppcontacto{
     left: 15rem;
     top: 25rem;
   }
-  
+
   .ppcontactopic{
     height: 350px;
   }
@@ -600,29 +602,6 @@
   .pp-half-circle {
     width: 350px;
     height: 350px;
-  }
-
-  .mediumTextIndex{
-    position: absolute;
-    top: 46rem;
-    margin: 2rem;
-    font-size: 4rem;
-    line-height: 36px;
-  }
-
-  .mediumText{
-    position: absolute;
-    top: 35rem;
-    margin: 2rem;
-    font-size: 4rem;
-    line-height: 36px;
-  }
-
-  .mediumTextContact{
-    top: 36rem;
-    right: 13rem;
-    font-size: 3rem;
-    line-height: 45px;
   }
 
   .workInfo{
@@ -678,29 +657,33 @@
   }
 
 
-.tittleSkill{
-  width: 200px;
-  padding: 3px;
-  font-size: 2rem;
-  border-radius: 20px;
-}
+  .tittleSkill{
+    width: 200px;
+    padding: 3px;
+    font-size: 2rem;
+    border-radius: 20px;
+  }
 
-.logo{
-  width: 100px;
-}
+  .logo{
+    width: 100px;
+  }
 
-.containerDesign{
-  margin-left: 3rem;
-  width: 600px;
-}
+  .containerDesign{
+    margin-left: 3rem;
+    width: 600px;
+  }
 
-.containerImg{
-  height: 400px;
-}
+  .containerImg{
+    height: 400px;
+  }
 
-.modalbox{
-  width: 400px;
-}
+  .modalbox{
+    width: 400px;
+  }
+
+  .secundaryText{
+    font-size: 1.7rem;
+  }
 }
 
 @media (min-width: 1020px) {
@@ -715,7 +698,7 @@
   }
 
   .hero-text {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     line-height: 1.4;
     max-width: 480px;
     min-height: 320px;
@@ -740,6 +723,22 @@
     top: 60px;
   }
 
+  .contacto-card {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    max-width: 800px;
+  }
+
+  .contacto-card-img img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .contacto-card-text {
+    font-size: 2.5rem;
+    min-height: 320px;
+  }
+
   .ppcontacto{
     left: 40rem;
     top: 25rem;
@@ -757,26 +756,6 @@
   .pp-half-circle {
     width: 350px;
     height: 350px;
-  }
-
-  .mediumTextIndex{
-    position: absolute;
-    top: 25rem;
-    right: 100px;
-    font-size: 4.4rem;
-    line-height: 36px;
-  }
-
-  .mediumText{
-    position: absolute;
-    top: 25rem;
-    left: 4rem;
-    font-size: 4rem;
-    line-height: 36px;
-  }
-
-  .mediumTextContact{
-    right: 40rem;
   }
 
   .workInfo{
@@ -831,5 +810,9 @@
 
   .modalbox{
     width: 450px;
+  }
+
+  .secundaryText{
+    font-size: 2.2rem;
   }
 }
